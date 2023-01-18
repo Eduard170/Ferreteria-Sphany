@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4b451ec1-d83a-48d7-a6d3-83dd75fadf4a">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     proveedor.`id_proveedor` AS proveedor_id_proveedor,
+     proveedor.`nombre` AS proveedor_nombre,
+     proveedor.`a_paterno` AS proveedor_a_paterno,
+     proveedor.`a_materno` AS proveedor_a_materno,
+     proveedor.`numero` AS proveedor_numero,
+     proveedor.`calle` AS proveedor_calle,
+     proveedor.`colonia` AS proveedor_colonia,
+     proveedor.`ciudad` AS proveedor_ciudad
+FROM
+     `proveedor` proveedor]]>
+	</queryString>
+	<field name="proveedor_id_proveedor" class="java.lang.Long"/>
+	<field name="proveedor_nombre" class="java.lang.String"/>
+	<field name="proveedor_a_paterno" class="java.lang.String"/>
+	<field name="proveedor_a_materno" class="java.lang.String"/>
+	<field name="proveedor_numero" class="java.lang.Integer"/>
+	<field name="proveedor_calle" class="java.lang.String"/>
+	<field name="proveedor_colonia" class="java.lang.String"/>
+	<field name="proveedor_ciudad" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<image>
+				<reportElement x="23" y="7" width="84" height="72" uuid="d354f55c-12c3-481d-9759-10e32b8eccfd"/>
+				<imageExpression><![CDATA["C:\\Users\\mega7692\\Ferreteria_Spanny\\src\\Reportes\\proveedor.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="144" y="44" width="290" height="35" uuid="a8939436-51ce-4115-b5a3-a0336b739c2d"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Calle Vicente Guerrero S/N, Colonia El Aserradero, Iliatenco, Guerrero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="7" width="318" height="37" uuid="9a1339e7-a479-4034-95a4-83a14dfda27e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FERRETERÍA "SPANNY"]]></text>
+			</staticText>
+			<image>
+				<reportElement x="470" y="7" width="70" height="72" uuid="0e096046-3a66-41a9-a7b7-0011bcefad45"/>
+				<imageExpression><![CDATA["C:\\Users\\mega7692\\Ferreteria_Spanny\\src\\Reportes\\011-config.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="34" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="2" width="67" height="20" uuid="9d19c930-c3a9-4521-b9bf-f3ff9f415a9b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id proveedor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="2" width="49" height="20" uuid="a46eba8f-719a-4863-b2d1-c0a06ce61d45"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="2" width="57" height="19" uuid="d6673fc1-2003-4585-92a6-3ac5f59bf469"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[A. Paterno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="2" width="114" height="20" uuid="5459a309-9f98-4315-9eaf-8b1855483639"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Numero del proveedor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="2" width="56" height="20" uuid="994b8ec9-e265-4195-8891-5f4eee4440d6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[A. Materno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="2" width="33" height="20" uuid="c668ecda-fd6e-4fc5-839e-0ce3764a65bd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Calle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="2" width="38" height="20" uuid="a3395477-489e-447d-bfe9-4547d768e5e3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Colonia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="2" width="42" height="20" uuid="c53cc302-0f93-49f4-9fd1-d396e1609cc3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ciudad]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="8" width="67" height="20" uuid="d7428859-e086-476e-b1ff-0348ac7cafc3"/>
+				<textFieldExpression><![CDATA[$F{proveedor_id_proveedor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="8" width="49" height="20" uuid="82e234ec-07d4-4e6a-915c-6081ffd678fd"/>
+				<textFieldExpression><![CDATA[$F{proveedor_nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="8" width="57" height="19" uuid="d3a0b71a-9b65-4e98-a758-d02ff934bd9a"/>
+				<textFieldExpression><![CDATA[$F{proveedor_a_paterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="8" width="56" height="20" uuid="cce0af17-2d22-4bc0-b85f-ee8c11794e42"/>
+				<textFieldExpression><![CDATA[$F{proveedor_a_materno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="8" width="113" height="20" uuid="a3239c06-c38f-4bc6-bdbe-b7a04479966e"/>
+				<textFieldExpression><![CDATA[$F{proveedor_numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="373" y="8" width="33" height="20" uuid="79ff1254-859f-45b5-823d-49a449d255c4"/>
+				<textFieldExpression><![CDATA[$F{proveedor_calle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="8" width="38" height="20" uuid="7fa46050-42b0-4265-9579-df993e08e68d"/>
+				<textFieldExpression><![CDATA[$F{proveedor_colonia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="7" width="42" height="20" uuid="553d2113-0473-40f9-8914-ab51c0ec30fd"/>
+				<textFieldExpression><![CDATA[$F{proveedor_ciudad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

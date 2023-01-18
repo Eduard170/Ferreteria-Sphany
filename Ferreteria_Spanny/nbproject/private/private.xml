@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlRegistrarproveedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlCombo.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlConsultarProducto.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlModificarUsuario.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/Conexion.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlModificarProveedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmAdministrarproveedores.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlEliminarProducto.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/Producto.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmConsultarVenta.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlConsultarproveedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmAAdministrarproductos.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmPrincipalVendedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmIniciarSesion1.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlEliminarUsuario.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/ingresarAdmin.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/ConsultasUsuario.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/ConsultasProducto.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlModificarContraseña.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlConsultarUsuario.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmReportes.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmRegistrarCompra.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmPrincipal.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/ConexionCombo.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlProducto.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/ConsultasProveedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmRegistrarventa.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmAdministrarusuarios.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/Usuario.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/Proveedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/frmRegistrarventaVendedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlModificarProducto.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlEliminarProveedor.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/ferreteria_spanny/Ferreteria_Spanny.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Controlador/CtrlRegistrarUsuario.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/Venta.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Vista/IngresarInvitado.java</file>
+            <file>file:/C:/Users/mega7692/Ferreteria_Spanny/src/Modelo/Compra.java</file>
+        </group>
+    </open-files>
+</project-private>

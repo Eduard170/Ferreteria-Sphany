@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e69bb292-2c01-4eb5-b6d8-908f9d78d7e2">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     producto.`id_producto` AS producto_id_producto,
+     producto.`nombre` AS producto_nombre,
+     producto.`marca` AS producto_marca,
+     producto.`existencia` AS producto_existencia,
+     detalle_de_producto.`contenido` AS detalle_de_producto_contenido,
+     detalle_de_producto.`precio_mayoreo` AS detalle_de_producto_precio_mayoreo,
+     detalle_de_producto.`precio_menudeo` AS detalle_de_producto_precio_menudeo
+FROM
+     `producto` producto INNER JOIN `detalle_de_producto` detalle_de_producto ON producto.`id_producto` = detalle_de_producto.`id_producto`]]>
+	</queryString>
+	<field name="producto_id_producto" class="java.lang.Long"/>
+	<field name="producto_nombre" class="java.lang.String"/>
+	<field name="producto_marca" class="java.lang.String"/>
+	<field name="producto_existencia" class="java.lang.Integer"/>
+	<field name="detalle_de_producto_contenido" class="java.lang.String"/>
+	<field name="detalle_de_producto_precio_mayoreo" class="java.lang.Double"/>
+	<field name="detalle_de_producto_precio_menudeo" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch">
+			<image>
+				<reportElement x="6" y="19" width="84" height="72" uuid="c8c53736-841b-453a-affb-130979750c98"/>
+				<imageExpression><![CDATA["C:\\Users\\mega7692\\Ferreteria_Spanny\\src\\Reportes\\proveedor.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="122" y="56" width="290" height="35" uuid="2c0484a2-3409-44f5-a78a-12efce094647"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Calle Vicente Guerrero S/N, Colonia El Aserradero, Iliatenco, Guerrero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="19" width="318" height="37" uuid="d622f8f0-e5d1-419d-b110-b9065b29cbc6"/>
+				<textElement>
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FERRETERÍA "SPANNY"]]></text>
+			</staticText>
+			<image>
+				<reportElement x="448" y="19" width="70" height="72" uuid="0316e8a2-6e81-4036-aa3b-32b6d1f1f663"/>
+				<imageExpression><![CDATA["C:\\Users\\mega7692\\Ferreteria_Spanny\\src\\Reportes\\011-config.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="52" y="3" width="50" height="20" uuid="81bb524a-fa7d-431f-81e8-97b06f5b15ba"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="116" y="3" width="50" height="20" uuid="f271386f-1ca5-42db-813b-aff3173996c9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="3" width="50" height="20" uuid="aa024373-0af9-4533-97ba-0106913130de"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Existencia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="3" width="50" height="20" uuid="6e05acd9-a623-49e4-9166-3295ea858dbb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contenido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="3" width="34" height="20" uuid="fae32173-3527-4b2e-8ec0-9de21756f688"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="3" width="100" height="20" uuid="9263a029-dbb7-4953-be2b-bb88acfc121a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio por mayoreo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="3" width="100" height="20" uuid="ce27d162-0ea5-4767-9152-8160c54ba098"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio menudeo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="6" y="0" width="34" height="20" uuid="3b6cd6b9-f12b-41e3-ae89-e83574fe90a3"/>
+				<textFieldExpression><![CDATA[$F{producto_id_producto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="0" width="50" height="20" uuid="995254b7-0007-4cdc-b53d-325c48b5482e"/>
+				<textFieldExpression><![CDATA[$F{producto_nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="0" width="50" height="20" uuid="a36f7b82-e54b-439a-91c5-928d60d17a95"/>
+				<textFieldExpression><![CDATA[$F{producto_marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="0" width="50" height="20" uuid="b286a552-53c7-44b7-bba4-607c0610688a"/>
+				<textFieldExpression><![CDATA[$F{producto_existencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="0" width="50" height="20" uuid="21327f4a-0654-4b60-81fc-559aad8cb412"/>
+				<textFieldExpression><![CDATA[$F{detalle_de_producto_contenido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="0" width="100" height="20" uuid="3bb66430-9b2d-4a06-98dd-5238d8cab22b"/>
+				<textFieldExpression><![CDATA[$F{detalle_de_producto_precio_mayoreo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="0" width="100" height="20" uuid="b6d87f90-e567-4aa5-820d-0db1385e1de0"/>
+				<textFieldExpression><![CDATA[$F{detalle_de_producto_precio_menudeo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
